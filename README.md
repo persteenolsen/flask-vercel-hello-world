@@ -1,28 +1,70 @@
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fpython%2Fflask3&demo-title=Flask%203%20%2B%20Vercel&demo-description=Use%20Flask%203%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2Fflask3-python-template.vercel.app%2F&demo-image=https://assets.vercel.com/image/upload/v1669994156/random/flask.png)
+# Python and Flask Tutorial
 
-# Flask + Vercel
+A Web Application with Python version 3.12.1 and Flask version 3.0.0 
 
-This example shows how to use Flask 3 on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
+# Installing
 
-## Demo
+- Download Python from the official website [Python](https://python.org/)
+- Make sure that you have installed Python and Flask by the commands in Powershell: "python --version" or "flask --version"
+- Download the the Python extension for Visual Studio Code which automatically include the Pylance extionsion
+- Download / fork this Flask Starter Web App from my GitHub
+- Create the virtual envirement ".venv" for the Flask Web App by Powershell or by VS Code
+- Virtual Enviroment by VS Code: "View - Command Palette - Python Create Enviroment"
 
-https://flask-python-template.vercel.app/
+# Run the Flask Web App without Debug
 
-## How it Works
+- Right click the local folder with the Flask Web App and open Powershell
+- Run "flask run" and type "http://127.0.0.1:5000/" in your Browser and check the site is loaded
+- If ".flaskenv" is not found run "pip install python-dotenv" and run "flask run" again
+- You can also run the Flask Web App by run "flask --app api/index run" which point directly at the Flask entry file 
+ 
+# Local development / debug / hot reload / refresh:
 
-This example uses the Web Server Gateway Interface (WSGI) with Flask to enable handling requests on Vercel with Serverless Functions.
+- The folder ".vscode" include the launch file for local development / debug by VS Code  
+- To debug from outside VS Code right click at the rootfolder with the repository forked from GitHub, open Powershell and type: "flask run --debug" which use the settings in the .flaskenv file. 
+- By using "flask run --debug" you could get promted to do: "pip install python-dotenv" for make things work
+- Check that the package "python-dotenv" is installed by running "pip list" to display a package list
+- Open a Browser and type "http://127.0.0.1:5000/" to see the site
+- Make a change in a file and type f5 or refresh the Browser to see the change
 
-## Running Locally
+# Deployment:
 
-```bash
-npm i -g vercel
-vercel dev
-```
+- Make sure to have both a GitHub and a Vercel Account
+- Create a repository with the Web App Starter at GitHub
+- Log in to Vercel and select the GitHub repository with your Web App Starter and follow the instructions
+- The vercel.json file will be used at Vercel Serverless Functions
+- Commit and sync your changes to GitHub which will create an automated Deployment to Vercel
+- Check that your site is online at Vercel "your-repository-name.vercel.app"
 
-Your Flask application is now available at `http://localhost:3000`.
+# Helpfull commands by Powershell or command promt:
 
-## One-Click Deploy
+- "python --version" => Display the installed Python version
+- "flask --version" => Display the version of installed Python, Flask and Werkzeug
+- "flask run" => Run the Flask Web App
+- "flask --app api/index run" => Run the Flask Web App which point directly at the Flask entry file 
+- "flask run --debug" => Run the Flask Web App in Debug mode - Show the file cnage by hitting f5
+- "pip install package name" => "pip install python-dotenv" => Installing a package
+- "pip uninstall package name" => "pip uninstall python-dotenv" => Removing a package
+- "pip list" => Display a list of the installed packages
+- "pip freeze requirements.txt" => Create a requirements.txt file with the installed packages
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+# Features / Usefull links
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fpython%2Fflask3&demo-title=Flask%203%20%2B%20Vercel&demo-description=Use%20Flask%203%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2Fflask3-python-template.vercel.app%2F&demo-image=https://assets.vercel.com/image/upload/v1669994156/random/flask.png)
+- [Python](https://python.org/)
+- [Flask](https://flask.palletsprojects.com/)
+- [Vercel](https://vercel.com/)
+- [GitHub](https://github.com/)
+- [VS Code](https://code.visualstudio.com/)
+
+
+
+# Author
+
+- Per Olsen
+
+# License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+
+
