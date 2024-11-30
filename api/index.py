@@ -8,4 +8,4 @@ def home():
 
 @app.route('/about')
 def about():
-    return 'Last updated: 20-01-2024 - A Python and Flask Web App'
+    return 'Last updated: 30-11-2024 - A Python and Flask Web App'

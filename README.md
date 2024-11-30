@@ -2,6 +2,10 @@
 
 A Web Application with Python version 3.12.1 and Flask version 3.0.0 
 
+Last updated: 30-11-2024
+
+At Vercel Cloud the Node Version 20 is selected
+
 # Installing
 
 - Download Python from the official website [Python](https://python.org/)
